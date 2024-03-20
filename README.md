@@ -1,18 +1,22 @@
 # Template Extension Specification
 
-- **Title:** Template
-- **Identifier:** <https://stac-extensions.github.io/template/v1.0.0/schema.json>
-- **Field Name Prefix:** template
-- **Scope:** Item, Collection
+- **Title:** Moving Features
+- **Identifier:** <https://stac-extensions.github.io/moving-features/v1.0.0/schema.json>
+- **Field Name Prefix:** mf
+- **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
-- **Owner**: @your-gh-handles @person2
+- **Owner**: @keewis
 
-This document explains the Template Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
-This is the place to add a short introduction.
+This document explains the Moving Features extension to the [SpatioTemporal Asset
+Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
+
+The intention of the first version of the specification is to encode a **Trajectory** object as
+defined by the [OGC Moving Features Encoding Extension –
+JSON](https://docs.ogc.org/is/19-045r3/19-045r3.html) standard. Future versions will aspire to also
+encode **Prism** objects.
 
 - Examples:
   - [Item example](examples/item.json): Shows the basic usage of the extension in a STAC Item
-  - [Collection example](examples/collection.json): Shows the basic usage of the extension in a STAC Collection
 - [JSON Schema](json-schema/schema.json)
 - [Changelog](./CHANGELOG.md)
 
@@ -21,9 +25,9 @@ This is the place to add a short introduction.
 The fields in the table below can be used in these parts of STAC documents:
 
 - [ ] Catalogs
-- [x] Collections
+- [ ] Collections
 - [x] Item Properties (incl. Summaries in Collections)
-- [x] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
+- [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
 | Field Name           | Type                      | Description                                  |
