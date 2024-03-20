@@ -7,10 +7,13 @@
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
 - **Owner**: @keewis
 
-This document explains the Moving Features extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
+This document explains the Moving Features extension to the [SpatioTemporal Asset
+Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
 
-The intention of the first version of the specification is to encode a **Trajectory** object as defined by the [OGC Moving Features Encoding Extension
-– JSON](https://docs.ogc.org/is/19-045r3/19-045r3.html) standard. Future versions will aspire to also encode **Prism** objects.
+The intention of the first version of the specification is to encode a **Trajectory** object as
+defined by the [OGC Moving Features Encoding Extension –
+JSON](https://docs.ogc.org/is/19-045r3/19-045r3.html) standard. Future versions will aspire to also
+encode **Prism** objects.
 
 - Examples:
   - [Item example](examples/item.json): Shows the basic usage of the extension in a STAC Item
