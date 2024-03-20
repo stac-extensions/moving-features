@@ -1,11 +1,11 @@
 # Template Extension Specification
 
-- **Title:** Template
-- **Identifier:** <https://stac-extensions.github.io/template/v1.0.0/schema.json>
-- **Field Name Prefix:** template
-- **Scope:** Item, Collection
+- **Title:** Moving Features
+- **Identifier:** <https://stac-extensions.github.io/moving-features/v1.0.0/schema.json>
+- **Field Name Prefix:** mf
+- **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
-- **Owner**: @your-gh-handles @person2
+- **Owner**: @keewis
 
 This document explains the Template Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
 This is the place to add a short introduction.
