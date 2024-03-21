@@ -49,6 +49,8 @@ values **must** describe time instants in monotonic increasing order (without du
 
 Mixing different kinds of timestamp encodings is not allowed.
 
+The `datetime` property from the base metadata should be `null`, and the `start_datetime` and `end_datetime` properties should have the same value as the first and last values from `datetimes`.
+
 ## Contributing
 
 All contributions are subject to the
