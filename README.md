@@ -38,18 +38,20 @@ The fields in the table below can be used in these parts of STAC documents:
 
 #### datetimes
 
-To properly represent trajectories, the `geometry` field of a item **must** have a type of `"LineString"` and the coordinates **must** describe *at
-least* 2 positions.
+To properly represent trajectories, the `geometry` field of a item **must** have a type of
+`"LineString"` and the coordinates **must** describe *at least* 2 positions.
 
-Once that is the case, the `datetimes` property has to be an array with the same number of elements as the `coordinates` property of the geometry. Its
-values **must** describe time instants in monotonic increasing order (without duplicated values) and may be:
+Once that is the case, the `datetimes` property has to be an array with the same number of elements
+as the `coordinates` property of the geometry. Its values **must** describe time instants in
+monotonic increasing order (without duplicated values) and may be:
 - numeric values of milliseconds since 1970-01-01 00:00:00 UTC (unix timestamps)
 - strings describing IETF RFC 3339 encoded timestamps
 - strings describing ISO8601 encoded timestamps following the Gregorian calendar
 
 Mixing different kinds of timestamp encodings is not allowed.
 
-The `datetime` property from the base metadata should be `null`, and the `start_datetime` and `end_datetime` properties should have the same value as the first and last values from `datetimes`.
+The `datetime` property from the base metadata should be `null`, and the `start_datetime` and
+`end_datetime` properties should have the same value as the first and last values from `datetimes`.
 
 ## Contributing
 
