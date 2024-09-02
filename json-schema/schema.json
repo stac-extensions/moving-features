@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://stac-extensions.github.io/moving-features/v1.0.0/schema.json#",
+  "$id": "https://iaocea.github.io/moving-features/v1.0.0/schema.json#",
   "title": "Moving Features Extension",
   "description": "STAC Moving Features Extension for STAC Items.",
   "oneOf": [
@@ -50,7 +50,7 @@
         "stac_extensions": {
           "type": "array",
           "contains": {
-            "const": "https://stac-extensions.github.io/template/v1.0.0/schema.json"
+            "const": "https://iaocea.github.io/moving-features/v1.0.0/schema.json"
           }
         }
       }
