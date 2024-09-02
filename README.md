@@ -1,7 +1,7 @@
-# Template Extension Specification
+# Moving Features Extension Specification
 
 - **Title:** Moving Features
-- **Identifier:** <https://stac-extensions.github.io/moving-features/v1.0.0/schema.json>
+- **Identifier:** <https://iaocea.github.io/moving-features/v1.0.0/schema.json>
 - **Field Name Prefix:** mf
 - **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
@@ -30,36 +30,28 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name           | Type                      | Description                                  |
-| -------------------- | ------------------------- | -------------------------------------------- |
-| template:new_field   | string                    | **REQUIRED**. Describe the required field... |
-| template:xyz         | [XYZ Object](#xyz-object) | Describe the field...                        |
-| template:another_one | \[number]                 | Describe the field...                        |
+| Field Name | Type               | Description                                                       |
+|------------|--------------------|-------------------------------------------------------------------|
+| datetimes  | [string \| number] | **REQUIRED** (trajectory): one timestamp per node in a linestring |
 
 ### Additional Field Information
 
-#### template:new_field
+#### datetimes
 
-This is a much more detailed description of the field `template:new_field`...
+To properly represent trajectories, the `geometry` field of a item **must** have a type of
+`"LineString"` and the coordinates **must** describe *at least* 2 positions.
 
-### XYZ Object
+Once that is the case, the `datetimes` property has to be an array with the same number of elements
+as the `coordinates` property of the geometry. Its values **must** describe time instants in
+monotonic increasing order (without duplicated values) and may be:
+- numeric values of milliseconds since 1970-01-01 00:00:00 UTC (unix timestamps)
+- strings describing IETF RFC 3339 encoded timestamps
+- strings describing ISO8601 encoded timestamps following the Gregorian calendar
 
-This is the introduction for the purpose and the content of the XYZ Object...
+Mixing different kinds of timestamp encodings is not allowed.
 
-| Field Name | Type   | Description                                  |
-| ---------- | ------ | -------------------------------------------- |
-| x          | number | **REQUIRED**. Describe the required field... |
-| y          | number | **REQUIRED**. Describe the required field... |
-| z          | number | **REQUIRED**. Describe the required field... |
-
-## Relation types
-
-The following types should be used as applicable `rel` types in the
-[Link Object](https://github.com/radiantearth/stac-spec/tree/master/item-spec/item-spec.md#link-object).
-
-| Type           | Description                           |
-| -------------- | ------------------------------------- |
-| fancy-rel-type | This link points to a fancy resource. |
+The `datetime` property from the base metadata should be `null`, and the `start_datetime` and
+`end_datetime` properties should have the same value as the first and last values from `datetimes`.
 
 ## Contributing
 
