@@ -13,3 +13,16 @@ repos:
       - id: prettier
         args: [--cache-location=.prettier_cache/cache]
         exclude_types: ["json", "markdown"]
+  - repo: local
+    hooks:
+      - id: remarklint
+        name: remarklint
+        language: node
+        entry: remark
+        types: [markdown, json]
+        args: ["--frail", "--quiet"]
+        additional_dependencies:
+          - remark
+          - remark-lint
+          - remark-cli
+          - remark-preset-lint-recommended
