@@ -19,8 +19,8 @@ repos:
         name: remark
         language: node
         entry: remark
-        types_or: [markdown, json]
-        args: ["--frail", "--quiet"]
+        types: [markdown]
+        args: ["--frail", "--quiet", "--output", "--"]
         additional_dependencies:
           - remark
           - remark-lint
