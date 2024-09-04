@@ -15,8 +15,8 @@ repos:
         exclude_types: ["json", "markdown"]
   - repo: local
     hooks:
-      - id: remarklint
-        name: remarklint
+      - id: remark
+        name: remark
         language: node
         entry: remark
         types_or: [markdown, json]
