@@ -5,7 +5,6 @@
   "description": "STAC Moving Features Extension for STAC Items.",
   "oneOf": [
     {
-      "$comment": "This is the schema for STAC Items. Remove this object if this extension only applies to Collections.",
       "allOf": [
         {
           "$ref": "#/definitions/stac_extensions"
@@ -32,6 +31,11 @@
                 },
                 {
                   "$ref": "#/definitions/fields"
+                },
+                {
+                  "properties": {
+                    "datetime": {"const": null}
+                  }
                 }
               ]
             }
