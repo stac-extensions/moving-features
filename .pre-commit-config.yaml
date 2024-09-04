@@ -19,7 +19,7 @@ repos:
         name: remarklint
         language: node
         entry: remark
-        types: [markdown, json]
+        types_or: [markdown, json]
         args: ["--frail", "--quiet"]
         additional_dependencies:
           - remark
