@@ -21,7 +21,12 @@ repos:
         language: node
         entry: remark
         types: [markdown]
-        args: ["--frail", "--quiet", "--output", "--"]
+        args:
+          - "--frail"
+          - "-r .github/remark.yaml"
+          - "--quiet"
+          - "--output"
+          - "--"
         additional_dependencies:
           - remark
           - remark-lint
