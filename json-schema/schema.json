@@ -33,7 +33,9 @@
                   "$ref": "#/definitions/fields"
                 },
                 {
-                  "datetime": {"const": null}
+                  "properties": {
+                    "datetime": {"const": null}
+                  }
                 }
               ]
             }
