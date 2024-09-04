@@ -12,7 +12,8 @@ repos:
     hooks:
       - id: prettier
         args: [--cache-location=.prettier_cache/cache]
-        exclude_types: ["json", "markdown"]
+        exclude_types: ["markdown"]
+        exclude: (json-schema|examples)/.+\.json
   - repo: local
     hooks:
       - id: remark
