@@ -14,26 +14,3 @@ repos:
         args: [--cache-location=.prettier_cache/cache]
         exclude_types: ["markdown"]
         exclude: (json-schema|examples)/.+\.json
-  - repo: local
-    hooks:
-      - id: remark
-        name: remark
-        language: node
-        entry: remark
-        types: [markdown]
-        args:
-          - "--frail"
-          - "-r .github/remark.yaml"
-          - "--quiet"
-          - "--output"
-          - "--"
-        additional_dependencies:
-          - remark
-          - remark-lint
-          - remark-lint-no-html
-          - remark-cli
-          - remark-preset-lint-consistent
-          - remark-preset-lint-markdown-style-guide
-          - remark-preset-lint-recommended
-          - remark-validate-links
-          - remark-gfm
