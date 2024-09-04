@@ -32,6 +32,9 @@
                 },
                 {
                   "$ref": "#/definitions/fields"
+                },
+                {
+                  "datetime": {"const": null}
                 }
               ]
             }
