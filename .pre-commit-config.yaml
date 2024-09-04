@@ -12,3 +12,4 @@ repos:
     hooks:
       - id: prettier
         args: [--cache-location=.prettier_cache/cache]
+        exclude_types: ["json"]
