@@ -24,6 +24,7 @@ repos:
         additional_dependencies:
           - remark
           - remark-lint
+          - remark-lint-no-html
           - remark-cli
           - remark-preset-lint-consistent
           - remark-preset-lint-markdown-style-guide
