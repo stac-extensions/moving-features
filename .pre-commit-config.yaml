@@ -25,5 +25,8 @@ repos:
           - remark
           - remark-lint
           - remark-cli
+          - remark-preset-lint-consistent
+          - remark-preset-lint-markdown-style-guide
           - remark-preset-lint-recommended
+          - remark-validate-links
           - remark-gfm
