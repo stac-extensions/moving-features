@@ -43,12 +43,10 @@ To properly represent trajectories, the `geometry` field of a item **must** have
 
 Once that is the case, the `datetimes` property has to be an array with the same number of elements
 as the `coordinates` property of the geometry. Its values **must** describe time instants in
-monotonic increasing order (without duplicated values) and may be:
-- numeric values of milliseconds since 1970-01-01 00:00:00 UTC (unix timestamps)
-- strings describing IETF RFC 3339 encoded timestamps
-- strings describing ISO8601 encoded timestamps following the Gregorian calendar
+monotonic increasing order (without duplicated values) and **must** be formatted as IETF RFC 3339 encoded timestamps.
 
-Mixing different kinds of timestamp encodings is not allowed.
+The OGC moving features standard also allows UNIX timestamps (milliseconds since 1970-01-01 00:00:00 UTC) and ISO8601-encoded timestamps in the
+Gregorian calendar. These have been explicitly disallowed to follow common practice in the STAC ecosystem.
 
 The `datetime` property from the base metadata should be `null`, and the `start_datetime` and
 `end_datetime` properties should have the same value as the first and last values from `datetimes`.
