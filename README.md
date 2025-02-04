@@ -1,7 +1,7 @@
 # Moving Features Extension Specification
 
 - **Title:** Moving Features
-- **Identifier:** <https://iaocea.github.io/moving-features/v1.0.0/schema.json>
+- **Identifier:** <https://stac-extensions.github.io/moving-features/v1.0.0/schema.json>
 - **Field Name Prefix:** mf
 - **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal

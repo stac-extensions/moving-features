@@ -10,6 +10,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'stac-extensions'
     steps:
       - uses: actions/setup-node@v3
         with:
