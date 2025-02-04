@@ -32,7 +32,7 @@ The fields in the table below can be used in these parts of STAC documents:
 
 | Field Name | Type               | Description                                                       |
 |------------|--------------------|-------------------------------------------------------------------|
-| datetimes  | [string \| number] | **REQUIRED** (trajectory): one timestamp per node in a linestring |
+| datetimes  | [string] | **REQUIRED** (trajectory): one timestamp per node in a linestring |
 
 ### Additional Field Information
 
