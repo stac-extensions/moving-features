@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.owner == "stac-extensions" && startsWith(github.ref, 'refs/tags/v')
+    if: github.owner == 'stac-extensions' && startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Inject env variables
         uses: rlespinasse/github-slug-action@v4.4.1
