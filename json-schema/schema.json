@@ -73,6 +73,7 @@
           "$comment": "TODO: figure out how to make sure that datetimes has the same length as the geometry coordinates",
           "type": "array",
           "title": "time values for the trajectory",
+          "minItems": 2,
           "items": {
             "type": "string",
             "format": "date-time",
