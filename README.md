@@ -81,3 +81,7 @@ If the tests reveal formatting problems with the examples, you can fix them with
 ```bash
 npm run format-examples
 ```
+
+## Acknowledgements
+
+This project was initiated using funding from CNES (PANGEO IAOCEA, contract R&T R-S23/DU-0002-025-01).
