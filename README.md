@@ -85,3 +85,7 @@ npm run format-examples
 ## Acknowledgements
 
 This project was initiated using funding from CNES (PANGEO IAOCEA, contract R&T R-S23/DU-0002-025-01).
+
+## Presentations
+
+- poster at EGU24: https://doi.org/10.5194/egusphere-egu24-18585
