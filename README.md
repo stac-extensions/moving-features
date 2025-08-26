@@ -88,4 +88,4 @@ This project was initiated using funding from CNES (PANGEO IAOCEA, contract R&T 
 
 ## Presentations
 
-- poster at EGU24: https://doi.org/10.5194/egusphere-egu24-18585
+- poster at EGU24: <https://doi.org/10.5194/egusphere-egu24-18585>
